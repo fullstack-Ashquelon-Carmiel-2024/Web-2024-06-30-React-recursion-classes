@@ -1,5 +1,9 @@
-function SelectUser() {
+// a) import createContext, useContext
+// b) createContext()
+// c) do not import the context, it is already created by b) here
 
+function SelectUser() {
+// e) Use useContext() and get value parts by destructuring
   return (
     <select>
       <option value="Aquaman">Aquaman</option>
@@ -62,7 +66,7 @@ function App() {
   }
 
   return (
-
+/* d) Envelope App by Provider */
       <div className="App">
         <Layout>
           <SelectUser />

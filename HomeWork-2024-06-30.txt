@@ -105,3 +105,7 @@ For example: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
    a) when the Sieve component mounts (useEffect)
    b) with buttons "Start" and "Stop"
       (not necessarily useEffect())
+
+7. Optionally: convert more projects (like Nim, Binary Guessing,
+   String Games - to React component) - you could use them
+   in our future React project

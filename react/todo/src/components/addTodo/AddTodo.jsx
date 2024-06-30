@@ -1,10 +1,10 @@
 import './AddTodo.css';
 import { useState, useContext } from 'react';
-import Context from '../../contexts/context';
+import TodoManagerContext from '../../contexts/context';
 
 export default function AddTodo() {
 
-  const { addNew } = useContext(Context);
+  const { addNew } = useContext(TodoManagerContext);
 
   const [ formData, setFormData ] = useState({
                                         mission: '',

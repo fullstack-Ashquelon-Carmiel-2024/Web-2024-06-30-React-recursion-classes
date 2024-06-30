@@ -3,7 +3,7 @@ import AddTodo from './components/addTodo/AddTodo';
 import Header from "./components/header/Header";
 import TodoList from "./components/todoList/TodoList";
 
-import Context from './contexts/context';
+import TodoManagerContext from './contexts/context';
 
 function App() {
   const [wrapperColor, setWrapperColor] = useState("white");
@@ -81,7 +81,7 @@ function App() {
   //  c) Go to TodoList
   console.log(todos)
   return (
-    <Context.Provider value={{comment, removeTodo, addNew}}>
+    <TodoManagerContext.Provider value={{comment, removeTodo, addNew}}>
     <div className="App">
       <Header appTitle={appTitle} />
       <div className="wrapper" style={{ background: wrapperColor }}>
@@ -92,7 +92,7 @@ function App() {
                   changeCompleted={changeCompleted} />
       </div>
     </div>
-    </Context.Provider>
+    </TodoManagerContext.Provider>
   );
 }
 

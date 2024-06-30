@@ -1,6 +1,6 @@
 import "./TodoItem.css";
 import { useContext } from "react";
-import Context from '../../contexts/context';
+import TodoManagerContext from '../../contexts/context';
 
 // MISSION03: a) don't get deleteTodo as a prop
 //  b) get removeTodo from the value of the context
@@ -9,7 +9,7 @@ export default function TodoItem({ todo, num, importantColor,
                                    changeCompleted }) {
 
   const { id, text, completed, important } = todo;
-  const { comment, removeTodo } = useContext(Context);
+  const { comment, removeTodo } = useContext(TodoManagerContext);
   //console.log(comment);
   const defaultColor = "white";
   const style = {
