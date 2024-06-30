@@ -84,5 +84,24 @@ b) Create function showSeq(n) that shows all the elements of
 the sequence till n-th element (including)
 
 5. React Challenge: Perfect Gallery component
+   - Should be comprised of small components of 1 figure/article/div/...
+   - Should get data from an array of objects 
+   - Should be responsive (use flex or grid ...)
+   - Optional: amount of items on the page 
+   - What happens when we click on one item:
+      -- it is enlarged and what else?
+      -- does it have arrows to move between the enlarged items?
+      -- does it have button bar below it?
+      -- is it modal?
+      -- how it disappears? with "Esc"? with "x"?
+   - Could be sorted?
+   - Optional: automatic movement
 
 6. React Challenge: Eratosthenos Sieve
+For example: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+-- Each number should be a component
+-- Optionally: input of the max number 
+-- Show the cross-overs of the numbers in real time:
+   a) when the Sieve component mounts (useEffect)
+   b) with buttons "Start" and "Stop"
+      (not necessarily useEffect())
